@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    background:#ddd;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 500px;
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "main2 main2 main3 main3"
+        "main4 main4 main5 main5"
+        "main6 main6 main7 main7"
+        "footer footer footer footer ";
+        border: 1px solid grey;
+}
+.grid-items{
+    background-color:darkgrey;
+    color: black;
+    padding: 15px;
+    font-size: 1em;
+
+}
+
+.one{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    
+}
+.two{
+    grid-area: main;
+    border: 1px solid black;
+}
+.three{
+    grid-area: main2;
+    border: 1px solid black;
+}
+.four{
+    grid-area: main3;
+    border: 1px solid black;
+}
+.five{
+    grid-area: main4;
+    border: 1px solid black;
+}
+.six{
+    grid-area: main5;
+    border: 1px solid black;
+}
+.seven{
+    grid-area: main6;
+    border: 1px solid black;
+}
+.eight{
+    grid-area: main7;
+    border: 1px solid black;
+}
+.nine{
+    grid-area: footer;
+    text-align: center;
+    border: 1px solid black;
+}
+.foto{
+    width: 100%;
+}
+.icon{
+    display: flex;
+    border: 1px solid black;
+}
+
+@media screen and (min-width:900px){
+
+    .container{
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main2 main3 main4"
+        "main5 main6 main7"
+        "footer footer footer";
+    }
+}
+
+@media screen and (min-width:1100px){
+
+.grid-items{
+    font-size: 0.7em;
+}
+
+    .container{
+        grid-template-areas: 
+        "header header header"
+        ". . ."
+        "main main ."
+        "main main ."
+        "main main main2"
+        "main main main2"
+        ". . ."
+        "main3 main4 main4"
+        "main3 main4 main4"
+        ". main4 main4"
+        ". main4 main4"
+        ". . ."
+        "main5 main6 main7"
+        "main5 main6 main7"
+        ". . ."
+        "footer footer footer";
+    }
+}
